@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2024 F1 Lineup & Season Info</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Times New Roman, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e10600; /* F1 red */
+    }
+    .team {
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin: 20px auto;
+      width: 85%;
+      display: flex;
+      align-items: center;
+    }
+    .team-logo {
+      width: 80px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .team-info {
+      flex: 1;
+    }
+    .team-info h2 {
+      margin: 0;
+    }
+    .drivers {
+      margin-top: 8px;
+      line-height: 1.5;
+      font-size: 1.1em;
+    }
+    .race-section {
+      margin-top: 40px;
+    }
+    .race-section h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 8px;
+    }
+    .race-list {
+      margin: 20px 0;
+      max-width: 90%;
+    }
+    .race-list table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .race-list th, .race-list td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: left;
+    }
+    .facts {
+      margin-top: 30px;
+      max-width: 90%;
+    }
+    .fact {
+      margin-bottom: 12px;
+    }
+
+    /* Team Colors */
+    .redbull { background-color: #1E41FF; }
+    .ferrari { background-color: #DC0000; }
+    .mercedes { background-color: #00D2BE; color: #111; }
+    .mclaren { background-color: #FF8700; color: #111; }
+    .astonmartin { background-color: #006F62; }
+    .alpine { background-color: #0090FF; }
+    .haas { background-color: #FFFFFF; color: #111; }
+    .rb { background-color: #2B4562; }
+    .williams { background-color: #005AFF; }
+    .stake { background-color: #00E701; color: #111; }
+  </style>
+</head>
+<body>
+
+  <h1>2024 Formula 1 — Teams & Drivers</h1>
+
+  <!-- Example team block; duplicate for each team -->
+  <div class="team redbull">
+    <img class="team-logo" src="logos/redbull.png" alt="Red Bull Logo" />
+    <div class="team-info">
+      <h2>Red Bull Racing Honda RBPT</h2>
+      <div class="drivers">
+        1 Max Verstappen<br />
+        11 Sergio Pérez
+      </div>
+    </div>
+  </div>
+
+  <div class="team ferrari">
+    <img class="team-logo" src="logos/ferrari.png" alt="Ferrari Logo" />
+    <div class="team-info">
+      <h2>Scuderia Ferrari</h2>
+      <div class="drivers">
+        16 Charles Leclerc<br />
+        55 Carlos Sainz
+      </div>
+    </div>
+  </div>
+
+  <div class="team mercedes">
+    <img class="team-logo" src="logos/mercedes.png" alt="Mercedes Logo" />
+    <div class="team-info">
+      <h2>Mercedes-AMG Petronas</h2>
+      <div class="drivers">
+        44 Lewis Hamilton<br />
+        63 George Russell
+      </div>
+    </div>
+  </div>
+
+  <div class="team mclaren">
+    <img class="team-logo" src="logos/mclaren.png" alt="McLaren Logo" />
+    <div class="team-info">
+      <h2>McLaren F1 Team</h2>
+      <div class="drivers">
+        4 Lando Norris<br />
+        81 Oscar Piastri
+      </div>
+    </div>
+  </div>
+
+  <div class="team astonmartin">
+    <img class="team-logo" src="logos/astonmartin.png" alt="Aston Martin Logo" />
+    <div class="team-info">
+      <h2>Aston Martin Aramco Mercedes</h2>
+      <div class="drivers">
+        14 Fernando Alonso<br />
+        18 Lance Stroll
+      </div>
+    </div>
+  </div>
+
+  <div class="team alpine">
+    <img class="team-logo" src="logos/alpine.png" alt="Alpine Logo" />
+    <div class="team-info">
+      <h2>Alpine Renault</h2>
+      <div class="drivers">
+        31 Esteban Ocon<br />
+        10 Pierre Gasly
+      </div>
+    </div>
+  </div>
+
+  <div class="team haas">
+    <img class="team-logo" src="logos/haas.png" alt="Haas Logo" />
+    <div class="team-info">
+      <h2>Haas Ferrari</h2>
+      <div class="drivers">
+        27 Nico Hülkenberg<br />
+        20 Kevin Magnussen
+      </div>
+    </div>
+  </div>
+
+  <div class="team rb">
+    <img class="team-logo" src="logos/rb.png" alt="RB Logo" />
+    <div class="team-info">
+      <h2>Visa Cash App RB</h2>
+      <div class="drivers">
+        22 Yuki Tsunoda<br />
+        35 Liam Lawson
+      </div>
+    </div>
+  </div>
+
+  <div class="team williams">
+    <img class="team-logo" src="logos/williams.png" alt="Williams Logo" />
+    <div class="team-info">
+      <h2>Williams Racing</h2>
+      <div class="drivers">
+        23 Alexander Albon<br />
+        2 Logan Sargeant
+      </div>
+    </div>
+  </div>
+
+  <div class="team stake">
+    <img class="team-logo" src="logos/sauber.png" alt="Sauber / Stake Logo" />
+    <div class="team-info">
+      <h2>Stake F1 / Kick Sauber</h2>
+      <div class="drivers">
+        77 Valtteri Bottas<br />
+        88 Zhou Guanyu
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Races & winners section -->
+  <div class="race-section">
+    <h2>2024 Season Race Results & Winners</h2>
+    <div class="race-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Grand Prix</th>
+            <th>Winner</th>
+            <th>Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- sample rows from official results :contentReference[oaicite:1]{index=1} -->
+          <tr><td>Bahrain, Sakhir</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Jeddah, Saudi Arabia</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Melboure, Australia</td><td>Carlos Sainz</td><td>Ferrari</td></tr>
+          <tr><td>Suzuka, Japan</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Shanghi, China</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Miami, United States</td><td>Lando Norris</td><td>McLaren</td></tr>
+          <tr><td>Emilia-Romagna, Italy</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Monaco, Monaco</td><td>Charles Leclerc</td><td>Ferrari</td></tr>
+          <tr><td>Montreal, Canada</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Barcelona, Spain</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Spielberg, Austria</td><td>George Russell</td><td>Mercedes</td></tr>
+          <tr><td>Silverstone, Great Britain</td><td>Lewis Hamilton</td><td>Mercedes</td></tr>
+          <tr><td>Mogyorod, Hungary</td><td>Oscar Piastri</td><td>McLaren</td></tr>
+          <tr><td>Spa-Francorchamps, Belgium</td><td>Lewis Hamilton</td><td>Mercedes</td></tr>
+          <tr><td>Zandvoort, Netherlands</td><td>Lando Norris</td><td>McLaren</td></tr>
+          <tr><td>Monza, Italy</td><td>Charles Leclerc</td><td>Ferrari</td></tr>
+          <tr><td>Baku, Azerbaijan</td><td>Oscar Piastri</td><td>McLaren</td></tr>
+          <tr><td>Singapore, Singapore</td><td>Lando Norris</td><td>McLaren</td></tr>
+          <tr><td>Austin, United States</td><td>Charles Leclerc</td><td>Ferrari</td></tr>
+          <tr><td>Mexico City, Mexico</td><td>Carlos Sainz</td><td>Ferrari</td></tr>
+          <tr><td>Sao Paulo, Brazil</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Las Vegas, United States</td><td>George Russell</td><td>Mercedes</td></tr>
+          <tr><td>Lusail, Qatar</td><td>Max Verstappen</td><td>Red Bull Racing</td></tr>
+          <tr><td>Abu Dhabi, UAE</td><td>Lando Norris</td><td>McLaren</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="facts">
+      <h2>Interesting Facts from 2024</h2>
+      <div class="fact">• In 2024, seven different drivers won at least one Grand Prix, and it was the first time since 2012 that so many winners appeared.</div>
+      <div class="fact">• Both Lando Norris and Oscar Piastri scored their first-ever F1 wins during the season.</div>
+      <div class="fact">• Lewis Hamilton ended a long win drought by winning at Silverstone (his 104th career win).</div>
+      <div class="fact">• 2024 was the first season in Formula 1 history in which **four different constructors** each recorded a 1–2 finish in a Grand Prix (Red Bull, Ferrari, McLaren, Mercedes). </div>
+      <div class="fact">• Midseason, Verstappen tied Ayrton Senna's all-time record of eight consecutive pole positions.</div>
+    </div>
+  </div>
+
+  <script>
+    // Optional: you could dynamically build the race table from a JS object or fetch from an API
+  </script>
+
+</body>
+</html>
